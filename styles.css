@@ -2,7 +2,7 @@
     font-family: 'Cavolini Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Cavolini Regular'), url('CAVOLINI.woff') format('woff');
+    src: local('Cavolini Regular'), url('fonts/CAVOLINI.woff') format('woff');
     }
     
 
@@ -10,7 +10,7 @@
     font-family: 'Cavolini Italic';
     font-style: normal;
     font-weight: normal;
-    src: local('Cavolini Italic'), url('CAVOLINIITALIC.woff') format('woff');
+    src: local('Cavolini Italic'), url('fonts/CAVOLINIITALIC.woff') format('woff');
     }
     
 
@@ -18,7 +18,7 @@
     font-family: 'Cavolini Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('Cavolini Bold'), url('CAVOLINIBOLD.woff') format('woff');
+    src: local('Cavolini Bold'), url('fonts/CAVOLINIBOLD.woff') format('woff');
     }
     
 
@@ -26,7 +26,7 @@
     font-family: 'Cavolini Bold Italic';
     font-style: normal;
     font-weight: normal;
-    src: local('Cavolini Bold Italic'), url('CAVOLINIBOLDITALIC.woff') format('woff');
+    src: local('Cavolini Bold Italic'), url('fonts/CAVOLINIBOLDITALIC.woff') format('woff');
     }
 
 h1{
@@ -57,14 +57,25 @@ ul.menu{
     align-items: center;
 }
 
-ul.menu li{
+ul.submenu{
+    font-family: "Cavolini Regular";
+    list-style-type: none;
+    background-color: #616161;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    align-items:left;
+}
+
+
+ul.menu li, ul.submenu li{
     display:inline;
     color: #A5A5A5;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-ul.menu li a{
+ul.menu li a, ul.submenu li a{
     color: #A5A5A5;
     text-decoration: none;
     height: 100%;
@@ -72,7 +83,7 @@ ul.menu li a{
     padding: 10px;
 
 }
-ul.menu li a:hover{
+ul.menu li a:hover, ul.submenu li a:hover{
     background-color:#A5A5A5;
     color: black;
     transition-duration: 500ms;
@@ -83,4 +94,54 @@ p{
     font-family: "Cavolini Regular";
     color: #A5A5A5;
 }
+
+
+
+version {
+    color:black;
+    font-family: "Cavolini Regular";
+    font-size: 30pt;
+    text-decoration: underline;
+    width: 100%;
+    height: 100%;
+    margin:0;
+}
+
+version newfeatures{
+    color:black;
+    font-family: "Cavolini Regular";
+    font-size: 15pt;
+    width: 100%;
+    text-decoration: none;
+    margin:0;
+}
+
+version bugs{
+    color:black;
+    font-family: "Cavolini Regular";
+    font-size: 15pt;
+    width: 100%;
+    text-decoration: none;
+    margin:0;
+
+}
+
+version newfeatures ul, version bugs ul{
+    color:black;
+    font-family: "Cavolini Regular";
+    font-size: 10pt;
+    width: 100%;
+    margin:0;
+    text-decoration: none;
+}
+
+version newfeatures ul li, version bugs ul li{
+    color:black;
+    font-family: "Cavolini Regular";
+    font-size: 10pt;
+    width: 100%;
+    margin:0;
+    text-decoration: none;
+}
+
 
